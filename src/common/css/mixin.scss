@@ -1,0 +1,20 @@
+//版心样式
+@mixin typeArea {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+// 文字多余隐藏
+@mixin fontOverflow {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+//清除浮动
+@mixin clearFlot(){
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
